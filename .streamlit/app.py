@@ -1,4 +1,11 @@
 import streamlit as st
+import pandas as pd
+import scipy.stats
+import streamlit as st
+import time
+
+
+
 
 st.header('Lanzar una moneda')
 
@@ -18,9 +25,6 @@ st.write('Esta aplicación aún no es funcional. En construcción.')
 
 #creacion de grafico
 
-import scipy.stats
-import streamlit as st
-import time
 
 st.header('Lanzar una moneda')
 
@@ -52,9 +56,7 @@ if start_button:
 
 #
 
-import scipy.stats
-import streamlit as st
-import time
+
 
 st.header('Lanzar una moneda')
 
@@ -87,10 +89,7 @@ if start_button:
 
 #
 
-import pandas as pd
-import scipy.stats
-import streamlit as st
-import time
+
 
 # estas son variables de estado que se conservan cuando Streamlin vuelve a ejecutar este script
 if 'experiment_no' not in st.session_state:
@@ -130,10 +129,7 @@ if start_button:
 
 #
 
-import pandas as pd
-import scipy.stats
-import streamlit as st
-import time
+
 
 # estas son variables de estado que se conservan cuando Streamlin vuelve a ejecutar este script
 if 'experiment_no' not in st.session_state:
@@ -183,9 +179,6 @@ if start_button:
         st.session_state['df_experiment_results'].reset_index(drop=True)
 
 st.write(st.session_state['df_experiment_results'])
-
-#
-
 
 
 
